@@ -6,6 +6,7 @@ pyyaml==3.13 ; python_version >= '3.7'
 websocket-client
 unittest2
 six
+flake8-junit-report
 
 # Supports code-block for module/README.rst
 # More info about: https://github.com/OCA/maintainer-quality-tools/issues/568
