@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+flake8_junit flake8-report.txt flake8_junit.xml
 if [[ "${TESTS:-1}" == "1" ]] && [[ "${TEST_ENABLE:-1}" == "1" ]] && [[ "${LINT_CHECK}" != "1" ]]; then
     coverage report --show-missing
     pip install codecov
