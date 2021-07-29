@@ -21,7 +21,7 @@ for addon in folders:
                                '--config=%s/travis_run_flake8__init__.cfg' %
                                flake8_config_dir])
     status += subprocess.call(['flake8', addon,
-                               '--config=%s/travis_run_flake8.cfg --output-file=flake8-report.txt' %
+                               '--config=%s/travis_run_flake8.cfg --output-file=/flake8-report.txt' %
                                flake8_config_dir])
 
 sys.exit(0 if status == 0 else 1)
